@@ -44,9 +44,16 @@ app.get('/api/health', (req, res) => {
   });
 });
 
-// Start DB connection attempt and launch server
-initDB().then(() => {
-  app.listen(PORT, () => {
-    console.log(`[API Server] Running on http://localhost:${PORT}`);
+// Export Express app for Vercel Serverless / Services
+export default app;
+
+// Start DB connection attempt and launch server when run standalone
+if (!process.env.VERCEL) {
+  initDB().then(() => {
+    app.listen(PORT, () => {
+      console.log(`[API Server] Running on http://localhost:${PORT}`);
+    });
   });
-});
+} else {
+  initDB().catch(err => console.error('[API Server] DB Init Error:', err));
+}
