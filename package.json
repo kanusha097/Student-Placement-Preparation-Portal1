@@ -1,0 +1,14 @@
+{
+  "name": "student-placement-preparation-portal",
+  "version": "1.0.0",
+  "description": "Comprehensive Student Placement Preparation Portal (Coding, Aptitude, Mock Tests, Interviews, Resume, Companies)",
+  "scripts": {
+    "install:all": "cd client && npm install && cd ../server && npm install",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["placement", "coding", "aptitude", "mock-tests", "react", "node", "mysql"],
+  "author": "Placement Portal Team",
+  "license": "MIT"
+}
