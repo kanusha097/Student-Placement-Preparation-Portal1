@@ -3,7 +3,7 @@ TITLE Push to GitHub - Student Placement Preparation Portal
 COLOR 0A
 echo ====================================================================
 echo    PUSHING TO GITHUB: Student Placement Preparation Portal
-echo    Repository: https://github.com/kanusha097/Student-Placement-Preparation-Portal.git
+echo    Repository: https://github.com/kanusha097/Student-Placement-Preparation-Portal1.git
 echo ====================================================================
 echo.
 
